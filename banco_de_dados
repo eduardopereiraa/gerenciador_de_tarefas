@@ -1,0 +1,13 @@
+BANCO DE DADOS MYSQL.
+
+CREATE DATABESA agendatarefas;
+
+CREATE TABLE tarefas (
+    tcodigo INT PRIMARY KEY AUTO_INCREMENT,
+    tnome VARCHAR(255) NOT NULL,
+    tdescricao TEXT,
+    tconcluido BOOLEAN, 
+    temail VARCHAR(60),
+    tdata DATE,  
+    tclassificacao INT -- 1 Urgente, 2 Normal, 3 Baixa
+);
